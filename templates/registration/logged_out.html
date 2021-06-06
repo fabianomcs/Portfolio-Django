@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="container">
+		<div class="row justify-content-center mt-6 mb-8">
+		    <div class="col-lg-12 col-12 text-center mb-4">
+                <p class="">Obrigado por gastar um tempo de qualidade com meu Web site hoje.</p>
+            </div>
+            <div class="col-lg-3 col-12 text-center mb-5">
+                <a class="home-btn text-capitalize" href="{% url 'homePage' %}"><i class="fa fa-home"></i> Voltar para Home</a>
+            </div>
+            <div class="col-lg-3 col-12 text-center mb-4">
+                <a class="home-btn text-capitalize" href="{% url 'dashboard:login' %}"><i class="fa fa-sign-in-alt"></i> Log in de novo</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
